@@ -1,0 +1,1953 @@
+{
+  "checked_on": "2026-10-30",
+  "manager": "pnpm@8.15.9",
+  "scope": "all dependencies including devDependencies",
+  "reported_counts": {
+    "info": 0,
+    "low": 44,
+    "moderate": 112,
+    "high": 141,
+    "critical": 19
+  },
+  "high_critical_advisories": [
+    {
+      "package": "parse-path",
+      "severity": "high",
+      "title": "Authorization Bypass in parse-path",
+      "advisory": "https://github.com/advisories/GHSA-3j8f-xvm3-ffx4",
+      "patched_versions": ">=5.0.0",
+      "example_paths": [
+        ". > @umijs/preset-ui@2.2.9 > @umijs/plugin-ui-blocks@2.2.7 > @umijs/block-sdk@2.3.0 > git-url-parse@11.6.0 > git-up@4.0.5 > parse-url@6.0.5 > parse-path@4.0.4"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "ejs",
+      "severity": "critical",
+      "title": "ejs template injection vulnerability",
+      "advisory": "https://github.com/advisories/GHSA-phwq-j96m-2c2q",
+      "patched_versions": ">=3.1.7",
+      "example_paths": [
+        ". > @umijs/preset-ui@2.2.9 > @umijs/plugin-ui-blocks@2.2.7 > @umijs/block-sdk@2.3.0 > @umijs/mem-fs-editor@6.0.2 > ejs@2.7.4"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "extend2",
+      "severity": "high",
+      "title": "Prototype Pollution in extend2",
+      "advisory": "https://github.com/advisories/GHSA-gjm5-83cw-p3p2",
+      "patched_versions": ">=1.0.1",
+      "example_paths": [
+        ". > umi-serve@1.9.11 > umi-core@1.9.10 > extend2@1.0.0"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "parse-url",
+      "severity": "critical",
+      "title": "Server-Side Request Forgery (SSRF) in GitHub repository ionicabizau/parse-url",
+      "advisory": "https://github.com/advisories/GHSA-j9fq-vwqv-2fm2",
+      "patched_versions": ">=8.1.0",
+      "example_paths": [
+        ". > @umijs/preset-ui@2.2.9 > @umijs/plugin-ui-blocks@2.2.7 > @umijs/block-sdk@2.3.0 > git-url-parse@11.6.0 > git-up@4.0.5 > parse-url@6.0.5"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "dicer",
+      "severity": "high",
+      "title": "Crash in HeaderParser in dicer",
+      "advisory": "https://github.com/advisories/GHSA-wm7h-9275-46v2",
+      "patched_versions": "<0.0.0",
+      "example_paths": [
+        ". > umi-serve@1.9.11 > umi-mock@2.1.5 > multer@1.4.4 > busboy@0.2.14 > dicer@0.2.5"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "loader-utils",
+      "severity": "critical",
+      "title": "Prototype pollution in webpack loader-utils",
+      "advisory": "https://github.com/advisories/GHSA-76p3-8jx3-jpfq",
+      "patched_versions": ">=1.4.1",
+      "example_paths": [
+        ". > @umijs/preset-ui@2.2.9 > @umijs/ui@2.2.2 > react-dev-utils@9.0.1 > loader-utils@1.2.3"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "debug",
+      "severity": "high",
+      "title": "debug Inefficient Regular Expression Complexity vulnerability",
+      "advisory": "https://github.com/advisories/GHSA-9vvw-cc9w-f27h",
+      "patched_versions": ">=2.6.9",
+      "example_paths": [
+        ". > @ant-design/pro-cli@3.3.0 > blink-diff@1.0.13 > preceptor-core@0.10.1 > log4js@1.1.1 > streamroller@0.4.1 > debug@0.7.4"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "marked",
+      "severity": "high",
+      "title": "Inefficient Regular Expression Complexity in marked",
+      "advisory": "https://github.com/advisories/GHSA-rrrm-qjm4-v8hf",
+      "patched_versions": ">=4.0.10",
+      "example_paths": [
+        ". > umi-serve@1.9.11 > umi-core@1.9.10 > marked@0.6.2",
+        ". > umi-serve@1.9.11 > umi-core@1.9.10 > marked-terminal@3.2.0 > marked@0.6.2"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "marked",
+      "severity": "high",
+      "title": "Inefficient Regular Expression Complexity in marked",
+      "advisory": "https://github.com/advisories/GHSA-5v2h-r2cx-5xgj",
+      "patched_versions": ">=4.0.10",
+      "example_paths": [
+        ". > umi-serve@1.9.11 > umi-core@1.9.10 > marked@0.6.2",
+        ". > umi-serve@1.9.11 > umi-core@1.9.10 > marked-terminal@3.2.0 > marked@0.6.2"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "loader-utils",
+      "severity": "high",
+      "title": "loader-utils is vulnerable to Regular Expression Denial of Service (ReDoS) via url variable",
+      "advisory": "https://github.com/advisories/GHSA-3rfm-jhwj-7488",
+      "patched_versions": ">=1.4.2",
+      "example_paths": [
+        ". > @umijs/preset-ui@2.2.9 > @umijs/ui@2.2.2 > react-dev-utils@9.0.1 > loader-utils@1.2.3"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "node-fetch",
+      "severity": "high",
+      "title": "node-fetch forwards secure headers to untrusted sites",
+      "advisory": "https://github.com/advisories/GHSA-r683-j2x4-v87g",
+      "patched_versions": ">=2.6.7",
+      "example_paths": [
+        ". > @ant-design/pro-cli@3.3.0 > umi-utils@1.7.3 > node-fetch@2.6.0",
+        ". > umi-serve@1.9.11 > umi-core@1.9.10 > umi-utils@1.7.3 > node-fetch@2.6.0"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "mockjs",
+      "severity": "high",
+      "title": "mockjs vulnerable to Prototype Pollution via the Util.extend function",
+      "advisory": "https://github.com/advisories/GHSA-mh8j-9jvh-gjf6",
+      "patched_versions": "<0.0.0",
+      "example_paths": [
+        ". > mockjs@1.1.0",
+        ". > umi-presets-pro@2.0.3 > @umijs/max-plugin-openapi@2.0.3 > @umijs/openapi@1.10.1 > mockjs@1.1.0"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "minimatch",
+      "severity": "high",
+      "title": "minimatch ReDoS vulnerability",
+      "advisory": "https://github.com/advisories/GHSA-f8q6-p94x-37v3",
+      "patched_versions": ">=3.0.5",
+      "example_paths": [
+        ". > @umijs/preset-ui@2.2.9 > @umijs/ui@2.2.2 > react-dev-utils@9.0.1 > recursive-readdir@2.2.2 > minimatch@3.0.4"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "json5",
+      "severity": "high",
+      "title": "Prototype Pollution in JSON5 via Parse Method",
+      "advisory": "https://github.com/advisories/GHSA-9c47-m6qq-7p4h",
+      "patched_versions": ">=1.0.2",
+      "example_paths": [
+        ". > umi-serve@1.9.11 > babel-plugin-module-resolver@3.1.1 > find-babel-config@1.2.0 > json5@0.5.1"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "gh-pages",
+      "severity": "critical",
+      "title": "tschaub gh-pages vulnerable to prototype pollution",
+      "advisory": "https://github.com/advisories/GHSA-8mmm-9v2q-x3f9",
+      "patched_versions": ">=5.0.0",
+      "example_paths": [
+        ". > gh-pages@3.2.3"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "immer",
+      "severity": "high",
+      "title": "Prototype Pollution in immer",
+      "advisory": "https://github.com/advisories/GHSA-c36v-fmgq-m8hx",
+      "patched_versions": ">=9.0.6",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > @umijs/plugins@4.7.28 > dva-immer@1.0.1 > immer@8.0.4",
+        ". > umi-presets-pro@2.0.3 > @alita/plugins@3.3.8 > @umijs/plugins@4.0.89 > dva-immer@1.0.1 > immer@8.0.4"
+      ],
+      "triage": "potential runtime/transitive path; production bundle reachability not fully verified",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "immer",
+      "severity": "critical",
+      "title": "Prototype Pollution in immer",
+      "advisory": "https://github.com/advisories/GHSA-33f9-j839-rf8h",
+      "patched_versions": ">=9.0.6",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > @umijs/plugins@4.7.28 > dva-immer@1.0.1 > immer@8.0.4",
+        ". > umi-presets-pro@2.0.3 > @alita/plugins@3.3.8 > @umijs/plugins@4.0.89 > dva-immer@1.0.1 > immer@8.0.4"
+      ],
+      "triage": "potential runtime/transitive path; production bundle reachability not fully verified",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "minimist",
+      "severity": "critical",
+      "title": "Prototype Pollution in minimist",
+      "advisory": "https://github.com/advisories/GHSA-xvch-5gv4-984h",
+      "patched_versions": ">=0.2.4",
+      "example_paths": [
+        ". > @umijs/preset-ui@2.2.9 > @umijs/ui@2.2.2 > mkdirp@0.5.1 > minimist@0.0.8"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "braces",
+      "severity": "high",
+      "title": "Uncontrolled resource consumption in braces",
+      "advisory": "https://github.com/advisories/GHSA-grv7-fg5c-xmjg",
+      "patched_versions": ">=3.0.3",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > @typescript-eslint/eslint-plugin@5.62.0 > @typescript-eslint/parser@5.62.0 > @typescript-eslint/typescript-estree@5.62.0 > globby@11.1.0 > fast-glob@3.3.2 > micromatch@4.0.5 > braces@3.0.2",
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > @typescript-eslint/eslint-plugin@5.62.0 > @typescript-eslint/type-utils@5.62.0 > @typescript-eslint/typescript-estree@5.62.0 > globby@11.1.0 > fast-glob@3.3.2 > micromatch@4.0.5 > braces@3.0.2"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "body-parser",
+      "severity": "high",
+      "title": "body-parser vulnerable to denial of service when url encoding is enabled",
+      "advisory": "https://github.com/advisories/GHSA-qwcr-r2fm-qrc7",
+      "patched_versions": ">=1.20.3",
+      "example_paths": [
+        ". > @umijs/preset-ui@2.2.9 > @umijs/ui@2.2.2 > express@4.17.1 > body-parser@1.19.0",
+        ". > umi-serve@1.9.11 > express@4.17.1 > body-parser@1.19.0"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "path-to-regexp",
+      "severity": "high",
+      "title": "path-to-regexp outputs backtracking regular expressions",
+      "advisory": "https://github.com/advisories/GHSA-9wv6-86v2-598j",
+      "patched_versions": ">=3.3.0",
+      "example_paths": [
+        ". > @ant-design/pro-components@2.6.48 > @ant-design/pro-layout@7.17.19 > path-to-regexp@2.4.0",
+        ". > @umijs/max@4.7.28 > @umijs/plugins@4.7.28 > @ant-design/pro-components@2.6.48 > @ant-design/pro-layout@7.17.19 > path-to-regexp@2.4.0"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "path-to-regexp",
+      "severity": "high",
+      "title": "path-to-regexp outputs backtracking regular expressions",
+      "advisory": "https://github.com/advisories/GHSA-9wv6-86v2-598j",
+      "patched_versions": ">=1.9.0",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > @umijs/plugins@4.7.28 > dva-immer@1.0.1 > dva@2.5.0-beta.2 > react-router-dom@4.3.1 > react-router@4.3.1 > path-to-regexp@1.8.0",
+        ". > @umijs/max@4.7.28 > @umijs/plugins@4.7.28 > dva-immer@1.0.1 > dva@2.5.0-beta.2 > react-router-redux@5.0.0-alpha.9 > react-router@4.3.1 > path-to-regexp@1.8.0"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "path-to-regexp",
+      "severity": "high",
+      "title": "path-to-regexp outputs backtracking regular expressions",
+      "advisory": "https://github.com/advisories/GHSA-9wv6-86v2-598j",
+      "patched_versions": ">=0.1.10",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > umi@4.7.28 > @umijs/preset-umi@4.7.28 > @umijs/bundler-mako@0.11.10 > express@4.18.2 > path-to-regexp@0.1.7",
+        ". > @umijs/max@4.7.28 > umi@4.7.28 > @umijs/preset-umi@4.7.28 > @umijs/bundler-utoopack@4.7.28 > express@4.18.2 > path-to-regexp@0.1.7"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "ip",
+      "severity": "high",
+      "title": "ip SSRF improper categorization in isPublic",
+      "advisory": "https://github.com/advisories/GHSA-2p57-rm9w-gvfp",
+      "patched_versions": "<0.0.0",
+      "example_paths": [
+        ". > @ant-design/pro-cli@3.3.0 > yeoman-environment@3.19.3 > @npmcli/arborist@4.3.1 > @npmcli/metavuln-calculator@2.0.0 > pacote@12.0.3 > @npmcli/run-script@2.0.0 > node-gyp@8.4.1 > make-fetch-happen@9.1.0 > socks-proxy-agent@6.2.1 > socks@2.7.1 > ip@2.0.0",
+        ". > @ant-design/pro-cli@3.3.0 > yeoman-environment@3.19.3 > @npmcli/arborist@4.3.1 > @npmcli/metavuln-calculator@2.0.0 > pacote@12.0.3 > npm-registry-fetch@12.0.2 > make-fetch-happen@10.2.1 > socks-proxy-agent@7.0.0 > socks@2.7.1 > ip@2.0.0"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "elliptic",
+      "severity": "critical",
+      "title": "Elliptic's private key extraction in ECDSA upon signing a malformed input (e.g. a string)",
+      "advisory": "https://github.com/advisories/GHSA-vjh7-7g9h-fjfh",
+      "patched_versions": ">=6.6.1",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > umi@4.7.28 > @umijs/bundler-webpack@4.7.28 > node-libs-browser@2.2.1 > crypto-browserify@3.12.0 > browserify-sign@4.2.2 > elliptic@6.5.4",
+        ". > @umijs/max@4.7.28 > umi@4.7.28 > @umijs/bundler-webpack@4.7.28 > node-libs-browser@2.2.1 > crypto-browserify@3.12.0 > create-ecdh@4.0.4 > elliptic@6.5.4"
+      ],
+      "triage": "potential runtime/transitive path; production bundle reachability not fully verified",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "qs",
+      "severity": "high",
+      "title": "qs vulnerable to Prototype Pollution",
+      "advisory": "https://github.com/advisories/GHSA-hrpp-h998-j3pp",
+      "patched_versions": ">=6.7.3",
+      "example_paths": [
+        ". > @umijs/preset-ui@2.2.9 > @umijs/ui@2.2.2 > express@4.17.1 > body-parser@1.19.0 > qs@6.7.0",
+        ". > @umijs/preset-ui@2.2.9 > @umijs/ui@2.2.2 > express@4.17.1 > qs@6.7.0"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "cross-spawn",
+      "severity": "high",
+      "title": "Regular Expression Denial of Service (ReDoS) in cross-spawn",
+      "advisory": "https://github.com/advisories/GHSA-3xgq-45jj-v275",
+      "patched_versions": ">=6.0.6",
+      "example_paths": [
+        ". > @umijs/preset-ui@2.2.9 > @umijs/plugin-ui-blocks@2.2.7 > @umijs/block-sdk@2.3.0 > @umijs/types@3.5.43 > @umijs/babel-preset-umi@3.5.43 > @umijs/babel-plugin-auto-css-modules@3.5.43 > @umijs/utils@3.5.43 > @umijs/deps@3.5.43 > clipboardy@2.3.0 > execa@1.0.0 > cross-spawn@6.0.5",
+        ". > @umijs/preset-ui@2.2.9 > @umijs/plugin-ui-blocks@2.2.7 > @umijs/block-sdk@2.3.0 > @umijs/types@3.5.43 > @umijs/babel-preset-umi@3.5.43 > @umijs/babel-plugin-import-to-await-require@3.5.43 > @umijs/utils@3.5.43 > @umijs/deps@3.5.43 > clipboardy@2.3.0 > execa@1.0.0 > cross-spawn@6.0.5"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "cross-spawn",
+      "severity": "high",
+      "title": "Regular Expression Denial of Service (ReDoS) in cross-spawn",
+      "advisory": "https://github.com/advisories/GHSA-3xgq-45jj-v275",
+      "patched_versions": ">=7.0.5",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > @babel/eslint-parser@7.23.3 > eslint@8.35.0 > cross-spawn@7.0.3",
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > @typescript-eslint/eslint-plugin@5.62.0 > @typescript-eslint/parser@5.62.0 > eslint@8.56.0 > cross-spawn@7.0.3"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "multer",
+      "severity": "high",
+      "title": "Multer vulnerable to Denial of Service from maliciously crafted requests",
+      "advisory": "https://github.com/advisories/GHSA-4pg4-qvpc-4q3h",
+      "patched_versions": ">=2.0.0",
+      "example_paths": [
+        ". > umi-serve@1.9.11 > umi-mock@2.1.5 > multer@1.4.4"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "path-to-regexp",
+      "severity": "high",
+      "title": "path-to-regexp contains a ReDoS",
+      "advisory": "https://github.com/advisories/GHSA-rhx6-c78j-4q9w",
+      "patched_versions": ">=0.1.12",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > umi@4.7.28 > @umijs/preset-umi@4.7.28 > @umijs/bundler-mako@0.11.10 > express@4.18.2 > path-to-regexp@0.1.7",
+        ". > @umijs/max@4.7.28 > umi@4.7.28 > @umijs/preset-umi@4.7.28 > @umijs/bundler-utoopack@4.7.28 > express@4.18.2 > path-to-regexp@0.1.7"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "multer",
+      "severity": "high",
+      "title": "Multer vulnerable to Denial of Service via unhandled exception",
+      "advisory": "https://github.com/advisories/GHSA-g5hg-p3ph-g8qg",
+      "patched_versions": ">=2.0.1",
+      "example_paths": [
+        ". > umi-serve@1.9.11 > umi-mock@2.1.5 > multer@1.4.4"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "multer",
+      "severity": "high",
+      "title": "Multer vulnerable to Denial of Service via memory leaks from unclosed streams",
+      "advisory": "https://github.com/advisories/GHSA-44fp-w29j-9vj5",
+      "patched_versions": ">=2.0.0",
+      "example_paths": [
+        ". > umi-serve@1.9.11 > umi-mock@2.1.5 > multer@1.4.4"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "pbkdf2",
+      "severity": "critical",
+      "title": "pbkdf2 returns predictable uninitialized/zero-filled memory for non-normalized or unimplemented algos",
+      "advisory": "https://github.com/advisories/GHSA-h7cp-r72f-jxh6",
+      "patched_versions": ">=3.1.3",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > umi@4.7.28 > @umijs/bundler-webpack@4.7.28 > node-libs-browser@2.2.1 > crypto-browserify@3.12.0 > browserify-sign@4.2.2 > parse-asn1@5.1.6 > pbkdf2@3.1.2",
+        ". > @umijs/max@4.7.28 > umi@4.7.28 > @umijs/bundler-webpack@4.7.28 > node-libs-browser@2.2.1 > crypto-browserify@3.12.0 > pbkdf2@3.1.2"
+      ],
+      "triage": "potential runtime/transitive path; production bundle reachability not fully verified",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "multer",
+      "severity": "high",
+      "title": "Multer vulnerable to Denial of Service via unhandled exception from malformed request",
+      "advisory": "https://github.com/advisories/GHSA-fjgf-rc76-4x9p",
+      "patched_versions": ">=2.0.2",
+      "example_paths": [
+        ". > umi-serve@1.9.11 > umi-mock@2.1.5 > multer@1.4.4"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "sha.js",
+      "severity": "critical",
+      "title": "sha.js is missing type checks leading to hash rewind and passing on crafted data",
+      "advisory": "https://github.com/advisories/GHSA-95m3-7q98-8xr5",
+      "patched_versions": ">=2.4.12",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > umi@4.7.28 > @umijs/bundler-webpack@4.7.28 > node-libs-browser@2.2.1 > crypto-browserify@3.12.0 > browserify-cipher@1.0.1 > browserify-aes@1.2.0 > create-hash@1.2.0 > sha.js@2.4.11",
+        ". > @umijs/max@4.7.28 > umi@4.7.28 > @umijs/bundler-webpack@4.7.28 > node-libs-browser@2.2.1 > crypto-browserify@3.12.0 > browserify-sign@4.2.2 > create-hash@1.2.0 > sha.js@2.4.11"
+      ],
+      "triage": "potential runtime/transitive path; production bundle reachability not fully verified",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "cipher-base",
+      "severity": "critical",
+      "title": "cipher-base is missing type checks, leading to hash rewind and passing on crafted data",
+      "advisory": "https://github.com/advisories/GHSA-cpq7-6gpm-g9rc",
+      "patched_versions": ">=1.0.5",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > umi@4.7.28 > @umijs/bundler-webpack@4.7.28 > node-libs-browser@2.2.1 > crypto-browserify@3.12.0 > browserify-cipher@1.0.1 > browserify-aes@1.2.0 > cipher-base@1.0.4",
+        ". > @umijs/max@4.7.28 > umi@4.7.28 > @umijs/bundler-webpack@4.7.28 > node-libs-browser@2.2.1 > crypto-browserify@3.12.0 > browserify-cipher@1.0.1 > browserify-aes@1.2.0 > create-hash@1.2.0 > cipher-base@1.0.4"
+      ],
+      "triage": "potential runtime/transitive path; production bundle reachability not fully verified",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "form-data",
+      "severity": "critical",
+      "title": "form-data uses unsafe random function in form-data for choosing boundary",
+      "advisory": "https://github.com/advisories/GHSA-fjxv-7rqg-78g4",
+      "patched_versions": ">=4.0.4",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > @umijs/plugins@4.7.28 > axios@0.27.2 > form-data@4.0.0",
+        ". > jest-environment-jsdom@29.7.0 > jsdom@20.0.3 > form-data@4.0.0"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "form-data",
+      "severity": "critical",
+      "title": "form-data uses unsafe random function in form-data for choosing boundary",
+      "advisory": "https://github.com/advisories/GHSA-fjxv-7rqg-78g4",
+      "patched_versions": ">=2.5.4",
+      "example_paths": [
+        ". > @ant-design/pro-cli@3.3.0 > blink-diff@1.0.13 > pngjs-image@0.11.7 > request@2.88.2 > form-data@2.3.3",
+        ". > @ant-design/pro-cli@3.3.0 > pngjs-image@0.11.7 > request@2.88.2 > form-data@2.3.3"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "underscore",
+      "severity": "critical",
+      "title": "Arbitrary Code Execution in underscore",
+      "advisory": "https://github.com/advisories/GHSA-cf4h-3jhx-xvhq",
+      "patched_versions": ">=1.12.1",
+      "example_paths": [
+        ". > @ant-design/pro-cli@3.3.0 > blink-diff@1.0.13 > pngjs-image@0.11.7 > underscore@1.7.0",
+        ". > @ant-design/pro-cli@3.3.0 > blink-diff@1.0.13 > preceptor-core@0.10.1 > underscore@1.7.0"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "loader-utils",
+      "severity": "high",
+      "title": "loader-utils is vulnerable to Regular Expression Denial of Service (ReDoS)",
+      "advisory": "https://github.com/advisories/GHSA-hhq3-ff78-jv3g",
+      "patched_versions": ">=1.4.2",
+      "example_paths": [
+        ". > @umijs/preset-ui@2.2.9 > @umijs/ui@2.2.2 > react-dev-utils@9.0.1 > loader-utils@1.2.3"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "glob",
+      "severity": "high",
+      "title": "glob CLI: Command injection via -c/--cmd executes matches with shell:true",
+      "advisory": "https://github.com/advisories/GHSA-5j98-mcp5-4vw2",
+      "patched_versions": ">=10.5.0",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > umi@4.7.28 > @umijs/preset-umi@4.7.28 > @umijs/bundler-mako@0.11.10 > rimraf@5.0.1 > glob@10.3.10",
+        ". > @ant-design/pro-cli@3.3.0 > yeoman-generator@5.10.0 > pacote@15.2.0 > cacache@17.1.4 > glob@10.3.10"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "axios",
+      "severity": "high",
+      "title": "axios Requests Vulnerable To Possible SSRF and Credential Leakage via Absolute URL",
+      "advisory": "https://github.com/advisories/GHSA-jr5f-v2jv-69x6",
+      "patched_versions": ">=0.30.0",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > @umijs/plugins@4.7.28 > axios@0.27.2",
+        ". > umi-presets-pro@2.0.3 > @alita/plugins@3.3.8 > @umijs/plugins@4.0.89 > axios@0.27.2"
+      ],
+      "triage": "potential runtime/transitive path; production bundle reachability not fully verified",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "@remix-run/router",
+      "severity": "high",
+      "title": "React Router vulnerable to XSS via Open Redirects",
+      "advisory": "https://github.com/advisories/GHSA-2w69-qvjg-hvjx",
+      "patched_versions": ">=1.23.2",
+      "example_paths": [
+        ". > @umijs/preset-ui@2.2.9 > @umijs/plugin-ui-blocks@2.2.7 > @umijs/block-sdk@2.3.0 > @umijs/types@3.5.43 > @umijs/renderer-react@3.5.43 > react-router-config@5.1.1 > react-router@6.21.3 > @remix-run/router@1.14.2",
+        ". > @umijs/preset-ui@2.2.9 > @umijs/plugin-ui-blocks@2.2.7 > umi@3.5.43 > @umijs/bundler-webpack@3.5.43 > @umijs/bundler-utils@3.5.43 > @umijs/types@3.5.43 > @umijs/renderer-react@3.5.43 > react-router-config@5.1.1 > react-router@6.21.3 > @remix-run/router@1.14.2"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "tar",
+      "severity": "high",
+      "title": "node-tar Vulnerable to Arbitrary File Creation/Overwrite via Hardlink Path Traversal",
+      "advisory": "https://github.com/advisories/GHSA-34x7-hfp2-rc4v",
+      "patched_versions": ">=7.5.7",
+      "example_paths": [
+        ". > @ant-design/pro-cli@3.3.0 > yeoman-environment@3.19.3 > @npmcli/arborist@4.3.1 > @npmcli/metavuln-calculator@2.0.0 > cacache@15.3.0 > tar@6.2.0",
+        ". > @ant-design/pro-cli@3.3.0 > yeoman-environment@3.19.3 > @npmcli/arborist@4.3.1 > @npmcli/metavuln-calculator@2.0.0 > pacote@12.0.3 > @npmcli/run-script@2.0.0 > node-gyp@8.4.1 > make-fetch-happen@9.1.0 > cacache@15.3.0 > tar@6.2.0"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "semver",
+      "severity": "high",
+      "title": "semver vulnerable to Regular Expression Denial of Service",
+      "advisory": "https://github.com/advisories/GHSA-c2qf-rxjj-qqgw",
+      "patched_versions": ">=6.3.1",
+      "example_paths": [
+        ". > @umijs/preset-ui@2.2.9 > @umijs/ui@2.2.2 > semver@6.3.0"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "pbkdf2",
+      "severity": "critical",
+      "title": "pbkdf2 silently disregards Uint8Array input, returning static keys",
+      "advisory": "https://github.com/advisories/GHSA-v62p-rq8g-8h59",
+      "patched_versions": ">=3.1.3",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > umi@4.7.28 > @umijs/bundler-webpack@4.7.28 > node-libs-browser@2.2.1 > crypto-browserify@3.12.0 > browserify-sign@4.2.2 > parse-asn1@5.1.6 > pbkdf2@3.1.2",
+        ". > @umijs/max@4.7.28 > umi@4.7.28 > @umijs/bundler-webpack@4.7.28 > node-libs-browser@2.2.1 > crypto-browserify@3.12.0 > pbkdf2@3.1.2"
+      ],
+      "triage": "potential runtime/transitive path; production bundle reachability not fully verified",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "tar",
+      "severity": "high",
+      "title": "node-tar is Vulnerable to Arbitrary File Overwrite and Symlink Poisoning via Insufficient Path Sanitization",
+      "advisory": "https://github.com/advisories/GHSA-8qq5-rm4j-mr97",
+      "patched_versions": ">=7.5.3",
+      "example_paths": [
+        ". > @ant-design/pro-cli@3.3.0 > yeoman-environment@3.19.3 > @npmcli/arborist@4.3.1 > @npmcli/metavuln-calculator@2.0.0 > cacache@15.3.0 > tar@6.2.0",
+        ". > @ant-design/pro-cli@3.3.0 > yeoman-environment@3.19.3 > @npmcli/arborist@4.3.1 > @npmcli/metavuln-calculator@2.0.0 > pacote@12.0.3 > @npmcli/run-script@2.0.0 > node-gyp@8.4.1 > make-fetch-happen@9.1.0 > cacache@15.3.0 > tar@6.2.0"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "tar",
+      "severity": "high",
+      "title": "Arbitrary File Read/Write via Hardlink Target Escape Through Symlink Chain in node-tar Extraction",
+      "advisory": "https://github.com/advisories/GHSA-83g3-92jg-28cx",
+      "patched_versions": ">=7.5.8",
+      "example_paths": [
+        ". > @ant-design/pro-cli@3.3.0 > yeoman-environment@3.19.3 > @npmcli/arborist@4.3.1 > @npmcli/metavuln-calculator@2.0.0 > cacache@15.3.0 > tar@6.2.0",
+        ". > @ant-design/pro-cli@3.3.0 > yeoman-environment@3.19.3 > @npmcli/arborist@4.3.1 > @npmcli/metavuln-calculator@2.0.0 > pacote@12.0.3 > @npmcli/run-script@2.0.0 > node-gyp@8.4.1 > make-fetch-happen@9.1.0 > cacache@15.3.0 > tar@6.2.0"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "minimatch",
+      "severity": "high",
+      "title": "minimatch has a ReDoS via repeated wildcards with non-matching literal in pattern",
+      "advisory": "https://github.com/advisories/GHSA-3ppc-4f35-3m26",
+      "patched_versions": ">=3.1.3",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > @babel/eslint-parser@7.23.3 > eslint@8.35.0 > @eslint/eslintrc@2.1.4 > minimatch@3.1.2",
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > @babel/eslint-parser@7.23.3 > eslint@8.35.0 > @humanwhocodes/config-array@0.11.14 > minimatch@3.1.2"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "minimatch",
+      "severity": "high",
+      "title": "minimatch has a ReDoS via repeated wildcards with non-matching literal in pattern",
+      "advisory": "https://github.com/advisories/GHSA-3ppc-4f35-3m26",
+      "patched_versions": ">=5.1.7",
+      "example_paths": [
+        ". > @ant-design/pro-cli@3.3.0 > yeoman-environment@3.19.3 > @npmcli/arborist@4.3.1 > @npmcli/map-workspaces@2.0.4 > glob@8.1.0 > minimatch@5.1.6",
+        ". > @ant-design/pro-cli@3.3.0 > yeoman-environment@3.19.3 > @npmcli/arborist@4.3.1 > @npmcli/map-workspaces@2.0.4 > minimatch@5.1.6"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "minimatch",
+      "severity": "high",
+      "title": "minimatch has a ReDoS via repeated wildcards with non-matching literal in pattern",
+      "advisory": "https://github.com/advisories/GHSA-3ppc-4f35-3m26",
+      "patched_versions": ">=7.4.7",
+      "example_paths": [
+        ". > @ant-design/pro-cli@3.3.0 > yeoman-environment@3.19.3 > mem-fs-editor@9.7.0 > minimatch@7.4.6",
+        ". > @ant-design/pro-cli@3.3.0 > yeoman-generator@5.10.0 > mem-fs-editor@9.7.0 > minimatch@7.4.6"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "minimatch",
+      "severity": "high",
+      "title": "minimatch has a ReDoS via repeated wildcards with non-matching literal in pattern",
+      "advisory": "https://github.com/advisories/GHSA-3ppc-4f35-3m26",
+      "patched_versions": ">=8.0.5",
+      "example_paths": [
+        ". > umi-presets-pro@2.0.3 > @umijs/max-plugin-openapi@2.0.3 > rimraf@4.4.1 > glob@9.3.5 > minimatch@8.0.4"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "minimatch",
+      "severity": "high",
+      "title": "minimatch has a ReDoS via repeated wildcards with non-matching literal in pattern",
+      "advisory": "https://github.com/advisories/GHSA-3ppc-4f35-3m26",
+      "patched_versions": ">=9.0.6",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > umi@4.7.28 > @umijs/preset-umi@4.7.28 > @umijs/bundler-mako@0.11.10 > rimraf@5.0.1 > glob@10.3.10 > minimatch@9.0.3",
+        ". > @ant-design/pro-cli@3.3.0 > yeoman-generator@5.10.0 > pacote@15.2.0 > cacache@17.1.4 > glob@10.3.10 > minimatch@9.0.3"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "minimatch",
+      "severity": "high",
+      "title": "minimatch has ReDoS: matchOne() combinatorial backtracking via multiple non-adjacent GLOBSTAR segments",
+      "advisory": "https://github.com/advisories/GHSA-7r86-cg39-jmmj",
+      "patched_versions": ">=3.1.3",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > @babel/eslint-parser@7.23.3 > eslint@8.35.0 > @eslint/eslintrc@2.1.4 > minimatch@3.1.2",
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > @babel/eslint-parser@7.23.3 > eslint@8.35.0 > @humanwhocodes/config-array@0.11.14 > minimatch@3.1.2"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "minimatch",
+      "severity": "high",
+      "title": "minimatch has ReDoS: matchOne() combinatorial backtracking via multiple non-adjacent GLOBSTAR segments",
+      "advisory": "https://github.com/advisories/GHSA-7r86-cg39-jmmj",
+      "patched_versions": ">=5.1.8",
+      "example_paths": [
+        ". > @ant-design/pro-cli@3.3.0 > yeoman-environment@3.19.3 > @npmcli/arborist@4.3.1 > @npmcli/map-workspaces@2.0.4 > glob@8.1.0 > minimatch@5.1.6",
+        ". > @ant-design/pro-cli@3.3.0 > yeoman-environment@3.19.3 > @npmcli/arborist@4.3.1 > @npmcli/map-workspaces@2.0.4 > minimatch@5.1.6"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "minimatch",
+      "severity": "high",
+      "title": "minimatch has ReDoS: matchOne() combinatorial backtracking via multiple non-adjacent GLOBSTAR segments",
+      "advisory": "https://github.com/advisories/GHSA-7r86-cg39-jmmj",
+      "patched_versions": ">=7.4.8",
+      "example_paths": [
+        ". > @ant-design/pro-cli@3.3.0 > yeoman-environment@3.19.3 > mem-fs-editor@9.7.0 > minimatch@7.4.6",
+        ". > @ant-design/pro-cli@3.3.0 > yeoman-generator@5.10.0 > mem-fs-editor@9.7.0 > minimatch@7.4.6"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "minimatch",
+      "severity": "high",
+      "title": "minimatch has ReDoS: matchOne() combinatorial backtracking via multiple non-adjacent GLOBSTAR segments",
+      "advisory": "https://github.com/advisories/GHSA-7r86-cg39-jmmj",
+      "patched_versions": ">=8.0.6",
+      "example_paths": [
+        ". > umi-presets-pro@2.0.3 > @umijs/max-plugin-openapi@2.0.3 > rimraf@4.4.1 > glob@9.3.5 > minimatch@8.0.4"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "minimatch",
+      "severity": "high",
+      "title": "minimatch has ReDoS: matchOne() combinatorial backtracking via multiple non-adjacent GLOBSTAR segments",
+      "advisory": "https://github.com/advisories/GHSA-7r86-cg39-jmmj",
+      "patched_versions": ">=9.0.7",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > umi@4.7.28 > @umijs/preset-umi@4.7.28 > @umijs/bundler-mako@0.11.10 > rimraf@5.0.1 > glob@10.3.10 > minimatch@9.0.3",
+        ". > @ant-design/pro-cli@3.3.0 > yeoman-generator@5.10.0 > pacote@15.2.0 > cacache@17.1.4 > glob@10.3.10 > minimatch@9.0.3"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "minimatch",
+      "severity": "high",
+      "title": "minimatch ReDoS: nested *() extglobs generate catastrophically backtracking regular expressions",
+      "advisory": "https://github.com/advisories/GHSA-23c5-xmqv-rm74",
+      "patched_versions": ">=3.1.4",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > @babel/eslint-parser@7.23.3 > eslint@8.35.0 > @eslint/eslintrc@2.1.4 > minimatch@3.1.2",
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > @babel/eslint-parser@7.23.3 > eslint@8.35.0 > @humanwhocodes/config-array@0.11.14 > minimatch@3.1.2"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "minimatch",
+      "severity": "high",
+      "title": "minimatch ReDoS: nested *() extglobs generate catastrophically backtracking regular expressions",
+      "advisory": "https://github.com/advisories/GHSA-23c5-xmqv-rm74",
+      "patched_versions": ">=5.1.8",
+      "example_paths": [
+        ". > @ant-design/pro-cli@3.3.0 > yeoman-environment@3.19.3 > @npmcli/arborist@4.3.1 > @npmcli/map-workspaces@2.0.4 > glob@8.1.0 > minimatch@5.1.6",
+        ". > @ant-design/pro-cli@3.3.0 > yeoman-environment@3.19.3 > @npmcli/arborist@4.3.1 > @npmcli/map-workspaces@2.0.4 > minimatch@5.1.6"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "minimatch",
+      "severity": "high",
+      "title": "minimatch ReDoS: nested *() extglobs generate catastrophically backtracking regular expressions",
+      "advisory": "https://github.com/advisories/GHSA-23c5-xmqv-rm74",
+      "patched_versions": ">=7.4.8",
+      "example_paths": [
+        ". > @ant-design/pro-cli@3.3.0 > yeoman-environment@3.19.3 > mem-fs-editor@9.7.0 > minimatch@7.4.6",
+        ". > @ant-design/pro-cli@3.3.0 > yeoman-generator@5.10.0 > mem-fs-editor@9.7.0 > minimatch@7.4.6"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "minimatch",
+      "severity": "high",
+      "title": "minimatch ReDoS: nested *() extglobs generate catastrophically backtracking regular expressions",
+      "advisory": "https://github.com/advisories/GHSA-23c5-xmqv-rm74",
+      "patched_versions": ">=8.0.6",
+      "example_paths": [
+        ". > umi-presets-pro@2.0.3 > @umijs/max-plugin-openapi@2.0.3 > rimraf@4.4.1 > glob@9.3.5 > minimatch@8.0.4"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "minimatch",
+      "severity": "high",
+      "title": "minimatch ReDoS: nested *() extglobs generate catastrophically backtracking regular expressions",
+      "advisory": "https://github.com/advisories/GHSA-23c5-xmqv-rm74",
+      "patched_versions": ">=9.0.7",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > umi@4.7.28 > @umijs/preset-umi@4.7.28 > @umijs/bundler-mako@0.11.10 > rimraf@5.0.1 > glob@10.3.10 > minimatch@9.0.3",
+        ". > @ant-design/pro-cli@3.3.0 > yeoman-generator@5.10.0 > pacote@15.2.0 > cacache@17.1.4 > glob@10.3.10 > minimatch@9.0.3"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "multer",
+      "severity": "high",
+      "title": "Multer vulnerable to Denial of Service via incomplete cleanup",
+      "advisory": "https://github.com/advisories/GHSA-xf7r-hgr6-v32p",
+      "patched_versions": ">=2.1.0",
+      "example_paths": [
+        ". > umi-serve@1.9.11 > umi-mock@2.1.5 > multer@1.4.4"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "multer",
+      "severity": "high",
+      "title": "Multer vulnerable to Denial of Service via resource exhaustion",
+      "advisory": "https://github.com/advisories/GHSA-v52c-386h-88mc",
+      "patched_versions": ">=2.1.0",
+      "example_paths": [
+        ". > umi-serve@1.9.11 > umi-mock@2.1.5 > multer@1.4.4"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "serialize-javascript",
+      "severity": "high",
+      "title": "Serialize JavaScript is Vulnerable to RCE via RegExp.flags and Date.prototype.toISOString()",
+      "advisory": "https://github.com/advisories/GHSA-5c6j-r48x-rmvq",
+      "patched_versions": ">=7.0.3",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > @umijs/plugins@4.7.28 > @tailwindcss/webpack@4.3.3 > webpack@5.89.0 > terser-webpack-plugin@5.3.10 > serialize-javascript@6.0.2",
+        ". > @umijs/max@4.7.28 > umi@4.7.28 > @umijs/bundler-webpack@4.7.28 > @umijs/react-refresh-webpack-plugin@0.5.11 > webpack@5.89.0 > terser-webpack-plugin@5.3.10 > serialize-javascript@6.0.2"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "multer",
+      "severity": "high",
+      "title": "Multer Vulnerable to Denial of Service via Uncontrolled Recursion",
+      "advisory": "https://github.com/advisories/GHSA-5528-5vmv-3xc2",
+      "patched_versions": ">=2.1.1",
+      "example_paths": [
+        ". > umi-serve@1.9.11 > umi-mock@2.1.5 > multer@1.4.4"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "svgo",
+      "severity": "high",
+      "title": "SVGO DoS through entity expansion in DOCTYPE (Billion Laughs)",
+      "advisory": "https://github.com/advisories/GHSA-xpqw-6gx7-v673",
+      "patched_versions": ">=2.8.1",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > umi@4.7.28 > @umijs/bundler-webpack@4.7.28 > @svgr/plugin-svgo@6.5.1 > svgo@2.8.0",
+        ". > @umijs/max@4.7.28 > umi@4.7.28 > @umijs/preset-umi@4.7.28 > @umijs/bundler-utoopack@4.7.28 > @umijs/bundler-webpack@4.7.28 > @svgr/plugin-svgo@6.5.1 > svgo@2.8.0"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "tar",
+      "severity": "high",
+      "title": "tar has Hardlink Path Traversal via Drive-Relative Linkpath",
+      "advisory": "https://github.com/advisories/GHSA-qffp-2rhf-9h96",
+      "patched_versions": ">=7.5.10",
+      "example_paths": [
+        ". > @ant-design/pro-cli@3.3.0 > yeoman-environment@3.19.3 > @npmcli/arborist@4.3.1 > @npmcli/metavuln-calculator@2.0.0 > cacache@15.3.0 > tar@6.2.0",
+        ". > @ant-design/pro-cli@3.3.0 > yeoman-environment@3.19.3 > @npmcli/arborist@4.3.1 > @npmcli/metavuln-calculator@2.0.0 > pacote@12.0.3 > @npmcli/run-script@2.0.0 > node-gyp@8.4.1 > make-fetch-happen@9.1.0 > cacache@15.3.0 > tar@6.2.0"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "tar",
+      "severity": "high",
+      "title": "node-tar Symlink Path Traversal via Drive-Relative Linkpath",
+      "advisory": "https://github.com/advisories/GHSA-9ppj-qmqm-q256",
+      "patched_versions": ">=7.5.11",
+      "example_paths": [
+        ". > @ant-design/pro-cli@3.3.0 > yeoman-environment@3.19.3 > @npmcli/arborist@4.3.1 > @npmcli/metavuln-calculator@2.0.0 > cacache@15.3.0 > tar@6.2.0",
+        ". > @ant-design/pro-cli@3.3.0 > yeoman-environment@3.19.3 > @npmcli/arborist@4.3.1 > @npmcli/metavuln-calculator@2.0.0 > pacote@12.0.3 > @npmcli/run-script@2.0.0 > node-gyp@8.4.1 > make-fetch-happen@9.1.0 > cacache@15.3.0 > tar@6.2.0"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "flatted",
+      "severity": "high",
+      "title": "flatted vulnerable to unbounded recursion DoS in parse() revive phase",
+      "advisory": "https://github.com/advisories/GHSA-25h7-pfq9-p65f",
+      "patched_versions": ">=3.4.0",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > @babel/eslint-parser@7.23.3 > eslint@8.35.0 > file-entry-cache@6.0.1 > flat-cache@3.2.0 > flatted@3.2.9",
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > @typescript-eslint/eslint-plugin@5.62.0 > @typescript-eslint/parser@5.62.0 > eslint@8.56.0 > file-entry-cache@6.0.1 > flat-cache@3.2.0 > flatted@3.2.9"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "tar",
+      "severity": "high",
+      "title": "Race Condition in node-tar Path Reservations via Unicode Ligature Collisions on macOS APFS",
+      "advisory": "https://github.com/advisories/GHSA-r6q2-hw4h-h46w",
+      "patched_versions": ">=7.5.4",
+      "example_paths": [
+        ". > @ant-design/pro-cli@3.3.0 > yeoman-environment@3.19.3 > @npmcli/arborist@4.3.1 > @npmcli/metavuln-calculator@2.0.0 > cacache@15.3.0 > tar@6.2.0",
+        ". > @ant-design/pro-cli@3.3.0 > yeoman-environment@3.19.3 > @npmcli/arborist@4.3.1 > @npmcli/metavuln-calculator@2.0.0 > pacote@12.0.3 > @npmcli/run-script@2.0.0 > node-gyp@8.4.1 > make-fetch-happen@9.1.0 > cacache@15.3.0 > tar@6.2.0"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "path-to-regexp",
+      "severity": "high",
+      "title": "path-to-regexp vulnerable to Regular Expression Denial of Service via multiple route parameters",
+      "advisory": "https://github.com/advisories/GHSA-37ch-88jc-xwx2",
+      "patched_versions": ">=0.1.13",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > umi@4.7.28 > @umijs/preset-umi@4.7.28 > @umijs/bundler-mako@0.11.10 > express@4.18.2 > path-to-regexp@0.1.7",
+        ". > @umijs/max@4.7.28 > umi@4.7.28 > @umijs/preset-umi@4.7.28 > @umijs/bundler-utoopack@4.7.28 > express@4.18.2 > path-to-regexp@0.1.7"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "picomatch",
+      "severity": "high",
+      "title": "Picomatch has a ReDoS vulnerability via extglob quantifiers",
+      "advisory": "https://github.com/advisories/GHSA-c2c7-rcm5-vvqj",
+      "patched_versions": ">=2.3.2",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > @typescript-eslint/eslint-plugin@5.62.0 > @typescript-eslint/parser@5.62.0 > @typescript-eslint/typescript-estree@5.62.0 > globby@11.1.0 > fast-glob@3.3.2 > micromatch@4.0.5 > picomatch@2.3.1",
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > @typescript-eslint/eslint-plugin@5.62.0 > @typescript-eslint/type-utils@5.62.0 > @typescript-eslint/typescript-estree@5.62.0 > globby@11.1.0 > fast-glob@3.3.2 > micromatch@4.0.5 > picomatch@2.3.1"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "lodash-es",
+      "severity": "high",
+      "title": "lodash vulnerable to Code Injection via `_.template` imports key names",
+      "advisory": "https://github.com/advisories/GHSA-r5fr-rjxr-66jc",
+      "patched_versions": ">=4.18.0",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > @umijs/plugins@4.7.28 > dva-immer@1.0.1 > dva@2.5.0-beta.2 > dva-core@1.5.0-beta.2 > redux@3.7.2 > lodash-es@4.17.21",
+        ". > @umijs/max@4.7.28 > @umijs/plugins@4.7.28 > dva-immer@1.0.1 > dva@2.5.0-beta.2 > react-redux@5.1.2 > redux@3.7.2 > lodash-es@4.17.21"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "lodash",
+      "severity": "high",
+      "title": "lodash vulnerable to Code Injection via `_.template` imports key names",
+      "advisory": "https://github.com/advisories/GHSA-r5fr-rjxr-66jc",
+      "patched_versions": ">=4.18.0",
+      "example_paths": [
+        ". > @ant-design/icons@4.8.1 > lodash@4.17.21",
+        ". > @ant-design/pro-components@2.6.48 > @ant-design/pro-descriptions@2.5.32 > @ant-design/pro-field@2.14.5 > @chenshuai2144/sketch-color@1.0.9 > reactcss@1.2.3 > lodash@4.17.21"
+      ],
+      "triage": "potential runtime/transitive path; production bundle reachability not fully verified",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "@babel/traverse",
+      "severity": "critical",
+      "title": "Babel vulnerable to arbitrary code execution when compiling specifically crafted malicious code",
+      "advisory": "https://github.com/advisories/GHSA-67hx-6x53-jw92",
+      "patched_versions": ">=7.23.2",
+      "example_paths": [
+        ". > @umijs/preset-ui@2.2.9 > @umijs/plugin-ui-blocks@2.2.7 > @babel/traverse@7.4.5",
+        ". > @umijs/preset-ui@2.2.9 > @umijs/plugin-ui-blocks@2.2.7 > @umijs/block-sdk@2.3.0 > @babel/traverse@7.4.5"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "axios",
+      "severity": "high",
+      "title": "Axios: Incomplete Fix for CVE-2025-62718 — NO_PROXY Protection Bypassed via RFC 1122 Loopback Subnet (127.0.0.0/8) in Axios 1.15.0",
+      "advisory": "https://github.com/advisories/GHSA-pmwg-cvhr-8vh7",
+      "patched_versions": ">=0.31.1",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > @umijs/plugins@4.7.28 > axios@0.27.2",
+        ". > umi-presets-pro@2.0.3 > @alita/plugins@3.3.8 > @umijs/plugins@4.0.89 > axios@0.27.2"
+      ],
+      "triage": "potential runtime/transitive path; production bundle reachability not fully verified",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "axios",
+      "severity": "high",
+      "title": "Axios: Prototype Pollution Gadgets - Response Tampering, Data Exfiltration, and Request Hijacking",
+      "advisory": "https://github.com/advisories/GHSA-pf86-5x62-jrwf",
+      "patched_versions": ">=0.31.1",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > @umijs/plugins@4.7.28 > axios@0.27.2",
+        ". > umi-presets-pro@2.0.3 > @alita/plugins@3.3.8 > @umijs/plugins@4.0.89 > axios@0.27.2"
+      ],
+      "triage": "potential runtime/transitive path; production bundle reachability not fully verified",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "axios",
+      "severity": "high",
+      "title": "Axios: Header Injection via Prototype Pollution",
+      "advisory": "https://github.com/advisories/GHSA-6chq-wfr3-2hj9",
+      "patched_versions": ">=0.31.1",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > @umijs/plugins@4.7.28 > axios@0.27.2",
+        ". > umi-presets-pro@2.0.3 > @alita/plugins@3.3.8 > @umijs/plugins@4.0.89 > axios@0.27.2"
+      ],
+      "triage": "potential runtime/transitive path; production bundle reachability not fully verified",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "underscore",
+      "severity": "high",
+      "title": "Underscore has unlimited recursion in _.flatten and _.isEqual, potential for DoS attack",
+      "advisory": "https://github.com/advisories/GHSA-qpx9-hpmf-5gmw",
+      "patched_versions": ">=1.13.8",
+      "example_paths": [
+        ". > @ant-design/pro-cli@3.3.0 > blink-diff@1.0.13 > pngjs-image@0.11.7 > underscore@1.7.0",
+        ". > @ant-design/pro-cli@3.3.0 > blink-diff@1.0.13 > preceptor-core@0.10.1 > underscore@1.7.0"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "axios",
+      "severity": "high",
+      "title": "Axios is Vulnerable to Denial of Service via __proto__ Key in mergeConfig",
+      "advisory": "https://github.com/advisories/GHSA-43fc-jf86-j433",
+      "patched_versions": ">=0.30.3",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > @umijs/plugins@4.7.28 > axios@0.27.2",
+        ". > umi-presets-pro@2.0.3 > @alita/plugins@3.3.8 > @umijs/plugins@4.0.89 > axios@0.27.2"
+      ],
+      "triage": "potential runtime/transitive path; production bundle reachability not fully verified",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "ws",
+      "severity": "high",
+      "title": "ws affected by a DoS when handling a request with many HTTP headers",
+      "advisory": "https://github.com/advisories/GHSA-3h5v-q93c-6h6q",
+      "patched_versions": ">=8.17.1",
+      "example_paths": [
+        ". > jest-environment-jsdom@29.7.0 > jsdom@20.0.3 > ws@8.16.0"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "ws",
+      "severity": "high",
+      "title": "ws affected by a DoS when handling a request with many HTTP headers",
+      "advisory": "https://github.com/advisories/GHSA-3h5v-q93c-6h6q",
+      "patched_versions": ">=6.2.3",
+      "example_paths": [
+        ". > @ant-design/pro-cli@3.3.0 > carlo@0.9.46 > puppeteer-core@1.12.2 > ws@6.2.2"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "@babel/plugin-transform-modules-systemjs",
+      "severity": "high",
+      "title": "@babel/plugin-transform-modules-systemjs generates arbitrary code when compiling malicious input",
+      "advisory": "https://github.com/advisories/GHSA-fv7c-fp4j-7gwp",
+      "patched_versions": ">=7.29.4",
+      "example_paths": [
+        ". > @ant-design/pro-cli@3.3.0 > @babel/preset-env@7.23.8 > @babel/plugin-transform-modules-systemjs@7.23.3",
+        ". > @ant-design/pro-cli@3.3.0 > @umijs/fabric@2.14.1 > @babel/preset-env@7.23.8 > @babel/plugin-transform-modules-systemjs@7.23.3"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "shell-quote",
+      "severity": "critical",
+      "title": "shell-quote quote() does not escape newlines in object .op values",
+      "advisory": "https://github.com/advisories/GHSA-w7jw-789q-3m8p",
+      "patched_versions": ">=1.8.4",
+      "example_paths": [
+        ". > @umijs/preset-ui@2.2.9 > @umijs/ui@2.2.2 > react-dev-utils@9.0.1 > shell-quote@1.6.1",
+        ". > react-dev-inspector@1.9.0 > react-dev-utils@12.0.1 > shell-quote@1.8.1"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "axios",
+      "severity": "high",
+      "title": "Axios: Regular Expression Denial of Service (ReDoS) via Cookie Name Injection",
+      "advisory": "https://github.com/advisories/GHSA-hfxv-24rg-xrqf",
+      "patched_versions": ">=0.32.0",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > @umijs/plugins@4.7.28 > axios@0.27.2",
+        ". > umi-presets-pro@2.0.3 > @alita/plugins@3.3.8 > @umijs/plugins@4.0.89 > axios@0.27.2"
+      ],
+      "triage": "potential runtime/transitive path; production bundle reachability not fully verified",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "js-cookie",
+      "severity": "high",
+      "title": "JavaScript Cookie: Per-instance prototype hijack in assign() enables cookie-attribute injection",
+      "advisory": "https://github.com/advisories/GHSA-qjx8-664m-686j",
+      "patched_versions": ">=3.0.7",
+      "example_paths": [
+        ". > umi-presets-pro@2.0.3 > @alita/plugins@3.3.8 > ahooks@3.7.8 > js-cookie@2.2.1"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "axios",
+      "severity": "high",
+      "title": "Axios: Proxy-Authorization Credential Leak to Origin Server Across HTTP-to-HTTPS Redirect in Axios Node.js HTTP Adapter",
+      "advisory": "https://github.com/advisories/GHSA-p92q-9vqr-4j8v",
+      "patched_versions": ">=0.32.0",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > @umijs/plugins@4.7.28 > axios@0.27.2",
+        ". > umi-presets-pro@2.0.3 > @alita/plugins@3.3.8 > @umijs/plugins@4.0.89 > axios@0.27.2"
+      ],
+      "triage": "potential runtime/transitive path; production bundle reachability not fully verified",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "axios",
+      "severity": "high",
+      "title": "Axios: Proxy-Authorization header leaks to redirect target when proxy is re-evaluated to direct connection",
+      "advisory": "https://github.com/advisories/GHSA-j5f8-grm9-p9fc",
+      "patched_versions": ">=0.32.0",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > @umijs/plugins@4.7.28 > axios@0.27.2",
+        ". > umi-presets-pro@2.0.3 > @alita/plugins@3.3.8 > @umijs/plugins@4.0.89 > axios@0.27.2"
+      ],
+      "triage": "potential runtime/transitive path; production bundle reachability not fully verified",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "axios",
+      "severity": "high",
+      "title": "axios Vulnerable to Credential Theft and Response Hijacking via Prototype Pollution Gadget in Config Merge",
+      "advisory": "https://github.com/advisories/GHSA-3g43-6gmg-66jw",
+      "patched_versions": ">=0.31.1",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > @umijs/plugins@4.7.28 > axios@0.27.2",
+        ". > umi-presets-pro@2.0.3 > @alita/plugins@3.3.8 > @umijs/plugins@4.0.89 > axios@0.27.2"
+      ],
+      "triage": "potential runtime/transitive path; production bundle reachability not fully verified",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "tmp",
+      "severity": "high",
+      "title": "tmp has Path Traversal via unsanitized prefix/postfix that enables directory escape",
+      "advisory": "https://github.com/advisories/GHSA-ph9p-34f9-6g65",
+      "patched_versions": ">=0.2.6",
+      "example_paths": [
+        ". > @ant-design/pro-cli@3.3.0 > inquirer@8.2.6 > external-editor@3.1.0 > tmp@0.0.33",
+        ". > @ant-design/pro-cli@3.3.0 > yeoman-environment@3.19.3 > inquirer@8.2.6 > external-editor@3.1.0 > tmp@0.0.33"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "form-data",
+      "severity": "high",
+      "title": "form-data: CRLF injection in form-data via unescaped multipart field names and filenames",
+      "advisory": "https://github.com/advisories/GHSA-hmw2-7cc7-3qxx",
+      "patched_versions": ">=4.0.6",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > @umijs/plugins@4.7.28 > axios@0.27.2 > form-data@4.0.0",
+        ". > jest-environment-jsdom@29.7.0 > jsdom@20.0.3 > form-data@4.0.0"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "form-data",
+      "severity": "high",
+      "title": "form-data: CRLF injection in form-data via unescaped multipart field names and filenames",
+      "advisory": "https://github.com/advisories/GHSA-hmw2-7cc7-3qxx",
+      "patched_versions": ">=2.5.6",
+      "example_paths": [
+        ". > @ant-design/pro-cli@3.3.0 > blink-diff@1.0.13 > pngjs-image@0.11.7 > request@2.88.2 > form-data@2.3.3",
+        ". > @ant-design/pro-cli@3.3.0 > pngjs-image@0.11.7 > request@2.88.2 > form-data@2.3.3"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "multer",
+      "severity": "high",
+      "title": "Multer vulnerable to Denial of Service via deeply nested field names",
+      "advisory": "https://github.com/advisories/GHSA-72gw-mp4g-v24j",
+      "patched_versions": ">=2.2.0",
+      "example_paths": [
+        ". > umi-serve@1.9.11 > umi-mock@2.1.5 > multer@1.4.4"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "sigstore",
+      "severity": "high",
+      "title": "sigstore's `certificateOIDs` verification constraints are silently dropped and never enforced",
+      "advisory": "https://github.com/advisories/GHSA-52v5-jr5w-gjxr",
+      "patched_versions": ">=4.1.1",
+      "example_paths": [
+        ". > @ant-design/pro-cli@3.3.0 > yeoman-generator@5.10.0 > pacote@15.2.0 > sigstore@1.9.0"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "yeoman-environment",
+      "severity": "high",
+      "title": "yeoman-environment Vulnerable to Arbitrary Package Installation without User Confirmation",
+      "advisory": "https://github.com/advisories/GHSA-vv9j-gjw2-j8wp",
+      "patched_versions": ">=6.0.1",
+      "example_paths": [
+        ". > @ant-design/pro-cli@3.3.0 > yeoman-environment@3.19.3",
+        ". > @ant-design/pro-cli@3.3.0 > yeoman-generator@5.10.0 > yeoman-environment@3.19.3"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "ws",
+      "severity": "high",
+      "title": "ws: Memory exhaustion DoS from tiny fragments and data chunks",
+      "advisory": "https://github.com/advisories/GHSA-96hv-2xvq-fx4p",
+      "patched_versions": ">=8.21.0",
+      "example_paths": [
+        ". > jest-environment-jsdom@29.7.0 > jsdom@20.0.3 > ws@8.16.0"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "ws",
+      "severity": "high",
+      "title": "ws: Memory exhaustion DoS from tiny fragments and data chunks",
+      "advisory": "https://github.com/advisories/GHSA-96hv-2xvq-fx4p",
+      "patched_versions": ">=6.2.4",
+      "example_paths": [
+        ". > @ant-design/pro-cli@3.3.0 > carlo@0.9.46 > puppeteer-core@1.12.2 > ws@6.2.2"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "axios",
+      "severity": "high",
+      "title": "axios's shouldBypassProxy does not recognize IPv4-mapped IPv6 addresses, allowing NO_PROXY bypass (incomplete fix for CVE-2025-62718)",
+      "advisory": "https://github.com/advisories/GHSA-pjwm-pj3p-43mv",
+      "patched_versions": ">=0.32.0",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > @umijs/plugins@4.7.28 > axios@0.27.2",
+        ". > umi-presets-pro@2.0.3 > @alita/plugins@3.3.8 > @umijs/plugins@4.0.89 > axios@0.27.2"
+      ],
+      "triage": "potential runtime/transitive path; production bundle reachability not fully verified",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "brace-expansion",
+      "severity": "high",
+      "title": "brace-expansion: DoS via exponential-time expansion of consecutive non-expanding {} groups",
+      "advisory": "https://github.com/advisories/GHSA-3jxr-9vmj-r5cp",
+      "patched_versions": ">=2.1.2",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > umi@4.7.28 > @umijs/preset-umi@4.7.28 > @umijs/bundler-mako@0.11.10 > rimraf@5.0.1 > glob@10.3.10 > minimatch@9.0.3 > brace-expansion@2.0.1",
+        ". > @ant-design/pro-cli@3.3.0 > yeoman-environment@3.19.3 > @npmcli/arborist@4.3.1 > @npmcli/map-workspaces@2.0.4 > glob@8.1.0 > minimatch@5.1.6 > brace-expansion@2.0.1"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "brace-expansion",
+      "severity": "high",
+      "title": "brace-expansion: DoS via exponential-time expansion of consecutive non-expanding {} groups",
+      "advisory": "https://github.com/advisories/GHSA-3jxr-9vmj-r5cp",
+      "patched_versions": ">=1.1.16",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > @babel/eslint-parser@7.23.3 > eslint@8.35.0 > @eslint/eslintrc@2.1.4 > minimatch@3.1.2 > brace-expansion@1.1.11",
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > @babel/eslint-parser@7.23.3 > eslint@8.35.0 > @humanwhocodes/config-array@0.11.14 > minimatch@3.1.2 > brace-expansion@1.1.11"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "js-yaml",
+      "severity": "high",
+      "title": "js-yaml: YAML merge-key chains can force quadratic CPU consumption",
+      "advisory": "https://github.com/advisories/GHSA-52cp-r559-cp3m",
+      "patched_versions": ">=4.3.0",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > @babel/eslint-parser@7.23.3 > eslint@8.35.0 > @eslint/eslintrc@2.1.4 > js-yaml@4.1.0",
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > @babel/eslint-parser@7.23.3 > eslint@8.35.0 > js-yaml@4.1.0"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "js-yaml",
+      "severity": "high",
+      "title": "js-yaml: YAML merge-key chains can force quadratic CPU consumption",
+      "advisory": "https://github.com/advisories/GHSA-52cp-r559-cp3m",
+      "patched_versions": ">=3.15.0",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > eslint-plugin-jest@27.2.3 > jest@29.7.0 > @jest/core@29.7.0 > @jest/reporters@29.7.0 > @jest/transform@29.7.0 > babel-plugin-istanbul@6.1.1 > @istanbuljs/load-nyc-config@1.1.0 > js-yaml@3.14.1",
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > eslint-plugin-jest@27.2.3 > jest@29.7.0 > @jest/core@29.7.0 > @jest/transform@29.7.0 > babel-plugin-istanbul@6.1.1 > @istanbuljs/load-nyc-config@1.1.0 > js-yaml@3.14.1"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "tar",
+      "severity": "critical",
+      "title": "node-tar: Decompression/parse DoS via unlimited input",
+      "advisory": "https://github.com/advisories/GHSA-23hp-3jrh-7fpw",
+      "patched_versions": ">=7.5.19",
+      "example_paths": [
+        ". > @ant-design/pro-cli@3.3.0 > yeoman-environment@3.19.3 > @npmcli/arborist@4.3.1 > @npmcli/metavuln-calculator@2.0.0 > cacache@15.3.0 > tar@6.2.0",
+        ". > @ant-design/pro-cli@3.3.0 > yeoman-environment@3.19.3 > @npmcli/arborist@4.3.1 > @npmcli/metavuln-calculator@2.0.0 > pacote@12.0.3 > @npmcli/run-script@2.0.0 > node-gyp@8.4.1 > make-fetch-happen@9.1.0 > cacache@15.3.0 > tar@6.2.0"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "tar",
+      "severity": "high",
+      "title": "node-tar: Negative tar entry size causes infinite loop in archive replace",
+      "advisory": "https://github.com/advisories/GHSA-8x88-c5mf-7j5w",
+      "patched_versions": ">=7.5.18",
+      "example_paths": [
+        ". > @ant-design/pro-cli@3.3.0 > yeoman-environment@3.19.3 > @npmcli/arborist@4.3.1 > @npmcli/metavuln-calculator@2.0.0 > cacache@15.3.0 > tar@6.2.0",
+        ". > @ant-design/pro-cli@3.3.0 > yeoman-environment@3.19.3 > @npmcli/arborist@4.3.1 > @npmcli/metavuln-calculator@2.0.0 > pacote@12.0.3 > @npmcli/run-script@2.0.0 > node-gyp@8.4.1 > make-fetch-happen@9.1.0 > cacache@15.3.0 > tar@6.2.0"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "shell-quote",
+      "severity": "high",
+      "title": "shell-quote: Quadratic-complexity Denial of Service in `parse()` (CWE-407)",
+      "advisory": "https://github.com/advisories/GHSA-395f-4hp3-45gv",
+      "patched_versions": ">=1.9.0",
+      "example_paths": [
+        ". > @umijs/preset-ui@2.2.9 > @umijs/ui@2.2.2 > react-dev-utils@9.0.1 > shell-quote@1.6.1",
+        ". > react-dev-inspector@1.9.0 > react-dev-utils@12.0.1 > shell-quote@1.8.1"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "postcss",
+      "severity": "high",
+      "title": "PostCSS: Arbitrary file read and information disclosure via attacker-controlled sourceMappingURL in CSS comments",
+      "advisory": "https://github.com/advisories/GHSA-6g55-p6wh-862q",
+      "patched_versions": ">=8.5.12",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > @stylelint/postcss-css-in-js@0.38.0 > postcss@8.4.33",
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > @stylelint/postcss-css-in-js@0.38.0 > postcss-syntax@0.36.2 > postcss@8.4.33"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "brace-expansion",
+      "severity": "high",
+      "title": "brace-expansion: DoS via unbounded expansion length causing an out-of-memory process crash",
+      "advisory": "https://github.com/advisories/GHSA-mh99-v99m-4gvg",
+      "patched_versions": ">=1.1.17",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > @babel/eslint-parser@7.23.3 > eslint@8.35.0 > @eslint/eslintrc@2.1.4 > minimatch@3.1.2 > brace-expansion@1.1.11",
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > @babel/eslint-parser@7.23.3 > eslint@8.35.0 > @humanwhocodes/config-array@0.11.14 > minimatch@3.1.2 > brace-expansion@1.1.11"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "brace-expansion",
+      "severity": "high",
+      "title": "brace-expansion: DoS via unbounded expansion length causing an out-of-memory process crash",
+      "advisory": "https://github.com/advisories/GHSA-mh99-v99m-4gvg",
+      "patched_versions": ">=2.1.3",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > umi@4.7.28 > @umijs/preset-umi@4.7.28 > @umijs/bundler-mako@0.11.10 > rimraf@5.0.1 > glob@10.3.10 > minimatch@9.0.3 > brace-expansion@2.0.1",
+        ". > @ant-design/pro-cli@3.3.0 > yeoman-environment@3.19.3 > @npmcli/arborist@4.3.1 > @npmcli/map-workspaces@2.0.4 > glob@8.1.0 > minimatch@5.1.6 > brace-expansion@2.0.1"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "brace-expansion",
+      "severity": "high",
+      "title": "brace-expansion: DoS via unbounded intermediate arrays, bypassing the CVE-2026-14257 mitigation",
+      "advisory": "https://github.com/advisories/GHSA-rgw5-rvv9-x895",
+      "patched_versions": ">=2.1.4",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > umi@4.7.28 > @umijs/preset-umi@4.7.28 > @umijs/bundler-mako@0.11.10 > rimraf@5.0.1 > glob@10.3.10 > minimatch@9.0.3 > brace-expansion@2.0.1",
+        ". > @ant-design/pro-cli@3.3.0 > yeoman-environment@3.19.3 > @npmcli/arborist@4.3.1 > @npmcli/map-workspaces@2.0.4 > glob@8.1.0 > minimatch@5.1.6 > brace-expansion@2.0.1"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "brace-expansion",
+      "severity": "high",
+      "title": "brace-expansion: DoS via unbounded intermediate arrays, bypassing the CVE-2026-14257 mitigation",
+      "advisory": "https://github.com/advisories/GHSA-rgw5-rvv9-x895",
+      "patched_versions": ">=1.1.18",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > @babel/eslint-parser@7.23.3 > eslint@8.35.0 > @eslint/eslintrc@2.1.4 > minimatch@3.1.2 > brace-expansion@1.1.11",
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > @babel/eslint-parser@7.23.3 > eslint@8.35.0 > @humanwhocodes/config-array@0.11.14 > minimatch@3.1.2 > brace-expansion@1.1.11"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "js-yaml",
+      "severity": "high",
+      "title": "JS-YAML: Quadratic CPU consumption in !!omap resolution (3.x and 4.x) — CVE-2026-59870 fix not backported",
+      "advisory": "https://github.com/advisories/GHSA-5p4m-2wfm-xmqj",
+      "patched_versions": ">=3.15.1",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > eslint-plugin-jest@27.2.3 > jest@29.7.0 > @jest/core@29.7.0 > @jest/reporters@29.7.0 > @jest/transform@29.7.0 > babel-plugin-istanbul@6.1.1 > @istanbuljs/load-nyc-config@1.1.0 > js-yaml@3.14.1",
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > eslint-plugin-jest@27.2.3 > jest@29.7.0 > @jest/core@29.7.0 > @jest/transform@29.7.0 > babel-plugin-istanbul@6.1.1 > @istanbuljs/load-nyc-config@1.1.0 > js-yaml@3.14.1"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "js-yaml",
+      "severity": "high",
+      "title": "JS-YAML: Quadratic CPU consumption in !!omap resolution (3.x and 4.x) — CVE-2026-59870 fix not backported",
+      "advisory": "https://github.com/advisories/GHSA-5p4m-2wfm-xmqj",
+      "patched_versions": ">=4.3.1",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > @babel/eslint-parser@7.23.3 > eslint@8.35.0 > @eslint/eslintrc@2.1.4 > js-yaml@4.1.0",
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > @babel/eslint-parser@7.23.3 > eslint@8.35.0 > js-yaml@4.1.0"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "nanoid",
+      "severity": "high",
+      "title": "nanoid: non-secure generators can loop indefinitely with negative size",
+      "advisory": "https://github.com/advisories/GHSA-28wg-ghj8-5hjv",
+      "patched_versions": ">=3.3.16",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > @stylelint/postcss-css-in-js@0.38.0 > postcss@8.4.33 > nanoid@3.3.7",
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > @stylelint/postcss-css-in-js@0.38.0 > postcss-syntax@0.36.2 > postcss@8.4.33 > nanoid@3.3.7"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "extract-zip",
+      "severity": "high",
+      "title": "extract-zip unvalidated symlink path traversal",
+      "advisory": "https://github.com/advisories/GHSA-jmr9-qjv8-65gv",
+      "patched_versions": "<0.0.0",
+      "example_paths": [
+        ". > @ant-design/pro-cli@3.3.0 > carlo@0.9.46 > puppeteer-core@1.12.2 > extract-zip@1.7.0"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "nanoid",
+      "severity": "high",
+      "title": "nanoid: custom generators can loop indefinitely when size is zero",
+      "advisory": "https://github.com/advisories/GHSA-2v37-7h3g-55p8",
+      "patched_versions": ">=3.3.18",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > @stylelint/postcss-css-in-js@0.38.0 > postcss@8.4.33 > nanoid@3.3.7",
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > @stylelint/postcss-css-in-js@0.38.0 > postcss-syntax@0.36.2 > postcss@8.4.33 > nanoid@3.3.7"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "postcss",
+      "severity": "high",
+      "title": "PostCSS: Path Traversal in Previous Source Map Auto-Loading (sourceMappingURL) leads to Arbitrary .map File Disclosure",
+      "advisory": "https://github.com/advisories/GHSA-r28c-9q8g-f849",
+      "patched_versions": ">=8.5.18",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > @stylelint/postcss-css-in-js@0.38.0 > postcss@8.4.33",
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > @stylelint/postcss-css-in-js@0.38.0 > postcss-syntax@0.36.2 > postcss@8.4.33"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "svgo",
+      "severity": "high",
+      "title": "SVGO removeScripts plugin leaves some executable scripts intact",
+      "advisory": "https://github.com/advisories/GHSA-2p49-hgcm-8545",
+      "patched_versions": ">=2.8.3",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > umi@4.7.28 > @umijs/bundler-webpack@4.7.28 > @svgr/plugin-svgo@6.5.1 > svgo@2.8.0",
+        ". > @umijs/max@4.7.28 > umi@4.7.28 > @umijs/preset-umi@4.7.28 > @umijs/bundler-utoopack@4.7.28 > @umijs/bundler-webpack@4.7.28 > @svgr/plugin-svgo@6.5.1 > svgo@2.8.0"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "tar",
+      "severity": "high",
+      "title": "node-tar: Uncontrolled recursion in mapHas/filesFilter allows uncatchable stack-overflow DoS via crafted long-path tar with member selection",
+      "advisory": "https://github.com/advisories/GHSA-r292-9mhp-454m",
+      "patched_versions": ">=7.5.21",
+      "example_paths": [
+        ". > @ant-design/pro-cli@3.3.0 > yeoman-environment@3.19.3 > @npmcli/arborist@4.3.1 > @npmcli/metavuln-calculator@2.0.0 > cacache@15.3.0 > tar@6.2.0",
+        ". > @ant-design/pro-cli@3.3.0 > yeoman-environment@3.19.3 > @npmcli/arborist@4.3.1 > @npmcli/metavuln-calculator@2.0.0 > pacote@12.0.3 > @npmcli/run-script@2.0.0 > node-gyp@8.4.1 > make-fetch-happen@9.1.0 > cacache@15.3.0 > tar@6.2.0"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "pacote",
+      "severity": "high",
+      "title": "pacote is vulnerable to Denial of Service (DoS) via the addGitSha function",
+      "advisory": "https://github.com/advisories/GHSA-w4pp-8pjf-rmxw",
+      "patched_versions": ">=21.5.1",
+      "example_paths": [
+        ". > @ant-design/pro-cli@3.3.0 > yeoman-environment@3.19.3 > @npmcli/arborist@4.3.1 > @npmcli/metavuln-calculator@2.0.0 > pacote@12.0.3",
+        ". > @ant-design/pro-cli@3.3.0 > yeoman-environment@3.19.3 > @npmcli/arborist@4.3.1 > pacote@12.0.3"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "browserslist",
+      "severity": "high",
+      "title": "Browserslist: Unbounded memory growth (no cache eviction) via distinct query results, leading to eventual OOM",
+      "advisory": "https://github.com/advisories/GHSA-c83g-rgw3-j3cx",
+      "patched_versions": ">=4.28.7",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > @babel/core@7.23.6 > @babel/helper-compilation-targets@7.23.6 > browserslist@4.22.2 > update-browserslist-db@1.0.13 > browserslist@4.22.2",
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > @babel/eslint-parser@7.23.3 > @babel/core@7.23.6 > @babel/helper-compilation-targets@7.23.6 > browserslist@4.22.2 > update-browserslist-db@1.0.13 > browserslist@4.22.2"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "browserslist",
+      "severity": "high",
+      "title": "Browserslist: Uncaught crash / prototype write via untrusted browserslist-stats.json custom stats (normalizeStats)",
+      "advisory": "https://github.com/advisories/GHSA-73wf-gq98-2v4g",
+      "patched_versions": ">=4.28.7",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > @babel/core@7.23.6 > @babel/helper-compilation-targets@7.23.6 > browserslist@4.22.2 > update-browserslist-db@1.0.13 > browserslist@4.22.2",
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > @babel/eslint-parser@7.23.3 > @babel/core@7.23.6 > @babel/helper-compilation-targets@7.23.6 > browserslist@4.22.2 > update-browserslist-db@1.0.13 > browserslist@4.22.2"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "nanoid",
+      "severity": "high",
+      "title": "nanoid: Integer Overflow or Wraparound",
+      "advisory": "https://github.com/advisories/GHSA-xwg4-73v4-xw9w",
+      "patched_versions": ">=3.3.12",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > @stylelint/postcss-css-in-js@0.38.0 > postcss@8.4.33 > nanoid@3.3.7",
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > @stylelint/postcss-css-in-js@0.38.0 > postcss-syntax@0.36.2 > postcss@8.4.33 > nanoid@3.3.7"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "extract-zip",
+      "severity": "high",
+      "title": "extract-zip allows arbitrary file writes through symlink archive entries",
+      "advisory": "https://github.com/advisories/GHSA-7pqw-9j4j-h8q3",
+      "patched_versions": "<0.0.0",
+      "example_paths": [
+        ". > @ant-design/pro-cli@3.3.0 > carlo@0.9.46 > puppeteer-core@1.12.2 > extract-zip@1.7.0"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "js-yaml",
+      "severity": "high",
+      "title": "js-yaml: maxTotalMergeKeys does not limit CPU use for empty merge sources",
+      "advisory": "https://github.com/advisories/GHSA-2883-xcg3-v3hh",
+      "patched_versions": ">=3.15.2",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > eslint-plugin-jest@27.2.3 > jest@29.7.0 > @jest/core@29.7.0 > @jest/reporters@29.7.0 > @jest/transform@29.7.0 > babel-plugin-istanbul@6.1.1 > @istanbuljs/load-nyc-config@1.1.0 > js-yaml@3.14.1",
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > eslint-plugin-jest@27.2.3 > jest@29.7.0 > @jest/core@29.7.0 > @jest/transform@29.7.0 > babel-plugin-istanbul@6.1.1 > @istanbuljs/load-nyc-config@1.1.0 > js-yaml@3.14.1"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "js-yaml",
+      "severity": "high",
+      "title": "js-yaml: maxTotalMergeKeys does not limit CPU use for empty merge sources",
+      "advisory": "https://github.com/advisories/GHSA-2883-xcg3-v3hh",
+      "patched_versions": ">=4.3.2",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > @babel/eslint-parser@7.23.3 > eslint@8.35.0 > @eslint/eslintrc@2.1.4 > js-yaml@4.1.0",
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > @babel/eslint-parser@7.23.3 > eslint@8.35.0 > js-yaml@4.1.0"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "multer",
+      "severity": "high",
+      "title": "multer vulnerable to Denial of Service via crafted multipart field names",
+      "advisory": "https://github.com/advisories/GHSA-wc9g-mqfw-jrwm",
+      "patched_versions": ">=2.3.0",
+      "example_paths": [
+        ". > umi-serve@1.9.11 > umi-mock@2.1.5 > multer@1.4.4"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "multer",
+      "severity": "high",
+      "title": "multer vulnerable to Denial of Service via oversized array index in field names",
+      "advisory": "https://github.com/advisories/GHSA-535w-7cp7-47q4",
+      "patched_versions": ">=2.3.0",
+      "example_paths": [
+        ". > umi-serve@1.9.11 > umi-mock@2.1.5 > multer@1.4.4"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "brace-expansion",
+      "severity": "high",
+      "title": "brace-expansion: DoS via uncontrolled recursion on nested brace groups causing stack exhaustion",
+      "advisory": "https://github.com/advisories/GHSA-qhr7-859c-m2p7",
+      "patched_versions": ">=1.1.20",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > @babel/eslint-parser@7.23.3 > eslint@8.35.0 > @eslint/eslintrc@2.1.4 > minimatch@3.1.2 > brace-expansion@1.1.11",
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > @babel/eslint-parser@7.23.3 > eslint@8.35.0 > @humanwhocodes/config-array@0.11.14 > minimatch@3.1.2 > brace-expansion@1.1.11"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "brace-expansion",
+      "severity": "high",
+      "title": "brace-expansion: DoS via uncontrolled recursion on nested brace groups causing stack exhaustion",
+      "advisory": "https://github.com/advisories/GHSA-qhr7-859c-m2p7",
+      "patched_versions": ">=2.1.6",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > umi@4.7.28 > @umijs/preset-umi@4.7.28 > @umijs/bundler-mako@0.11.10 > rimraf@5.0.1 > glob@10.3.10 > minimatch@9.0.3 > brace-expansion@2.0.1",
+        ". > @ant-design/pro-cli@3.3.0 > yeoman-environment@3.19.3 > @npmcli/arborist@4.3.1 > @npmcli/map-workspaces@2.0.4 > glob@8.1.0 > minimatch@5.1.6 > brace-expansion@2.0.1"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "brace-expansion",
+      "severity": "high",
+      "title": "brace-expansion: DoS via uncontrolled recursion in parseCommaParts causing stack exhaustion",
+      "advisory": "https://github.com/advisories/GHSA-6j4f-fj2g-mc7p",
+      "patched_versions": ">=1.1.19",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > @babel/eslint-parser@7.23.3 > eslint@8.35.0 > @eslint/eslintrc@2.1.4 > minimatch@3.1.2 > brace-expansion@1.1.11",
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > @babel/eslint-parser@7.23.3 > eslint@8.35.0 > @humanwhocodes/config-array@0.11.14 > minimatch@3.1.2 > brace-expansion@1.1.11"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "brace-expansion",
+      "severity": "high",
+      "title": "brace-expansion: DoS via uncontrolled recursion in parseCommaParts causing stack exhaustion",
+      "advisory": "https://github.com/advisories/GHSA-6j4f-fj2g-mc7p",
+      "patched_versions": ">=2.1.5",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > umi@4.7.28 > @umijs/preset-umi@4.7.28 > @umijs/bundler-mako@0.11.10 > rimraf@5.0.1 > glob@10.3.10 > minimatch@9.0.3 > brace-expansion@2.0.1",
+        ". > @ant-design/pro-cli@3.3.0 > yeoman-environment@3.19.3 > @npmcli/arborist@4.3.1 > @npmcli/map-workspaces@2.0.4 > glob@8.1.0 > minimatch@5.1.6 > brace-expansion@2.0.1"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "flatted",
+      "severity": "high",
+      "title": "Prototype Pollution via parse() in NodeJS flatted",
+      "advisory": "https://github.com/advisories/GHSA-rf6f-7fwh-wjgh",
+      "patched_versions": ">=3.4.2",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > @babel/eslint-parser@7.23.3 > eslint@8.35.0 > file-entry-cache@6.0.1 > flat-cache@3.2.0 > flatted@3.2.9",
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > @typescript-eslint/eslint-plugin@5.62.0 > @typescript-eslint/parser@5.62.0 > eslint@8.56.0 > file-entry-cache@6.0.1 > flat-cache@3.2.0 > flatted@3.2.9"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "source-map-js",
+      "severity": "high",
+      "title": "source-map-js allows event-loop denial of service through indexed source-map section offsets",
+      "advisory": "https://github.com/advisories/GHSA-68fv-2mgg-jv7q",
+      "patched_versions": ">=1.2.2",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > @stylelint/postcss-css-in-js@0.38.0 > postcss@8.4.33 > source-map-js@1.0.2",
+        ". > @umijs/max@4.7.28 > @umijs/lint@4.7.28 > @stylelint/postcss-css-in-js@0.38.0 > postcss-syntax@0.36.2 > postcss@8.4.33 > source-map-js@1.0.2"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "proxy-addr",
+      "severity": "critical",
+      "title": "proxy-addr vulnerable to IP spoofing via IPv4-mapped IPv6 trust subnet",
+      "advisory": "https://github.com/advisories/GHSA-jqcg-44mw-7w3h",
+      "patched_versions": ">=2.0.8",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > umi@4.7.28 > @umijs/preset-umi@4.7.28 > @umijs/bundler-mako@0.11.10 > express@4.18.2 > proxy-addr@2.0.7",
+        ". > @umijs/max@4.7.28 > umi@4.7.28 > @umijs/preset-umi@4.7.28 > @umijs/bundler-utoopack@4.7.28 > express@4.18.2 > proxy-addr@2.0.7"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "compression",
+      "severity": "high",
+      "title": "compression vulnerable to Denial of Service via memory leak on premature response close",
+      "advisory": "https://github.com/advisories/GHSA-vc2v-76pw-4v95",
+      "patched_versions": ">=1.8.2",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > umi@4.7.28 > @umijs/preset-umi@4.7.28 > @umijs/bundler-mako@0.11.10 > compression@1.7.4",
+        ". > @umijs/max@4.7.28 > umi@4.7.28 > @umijs/preset-umi@4.7.28 > @umijs/bundler-utoopack@4.7.28 > compression@1.7.4"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "vite",
+      "severity": "high",
+      "title": "launch-editor: `fs.existsSync()` existence check can be bypassed on Windows",
+      "advisory": "https://github.com/advisories/GHSA-587h-7wmj-h5pm",
+      "patched_versions": ">=7.3.7",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > umi@4.7.28 > @umijs/preset-umi@4.7.28 > @umijs/bundler-vite@4.7.28 > @vitejs/plugin-react@5.2.0 > vite@7.3.6",
+        ". > @umijs/max@4.7.28 > umi@4.7.28 > @umijs/preset-umi@4.7.28 > @umijs/bundler-vite@4.7.28 > vite@7.3.6"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "body-parser",
+      "severity": "high",
+      "title": "body-parser vulnerable to Denial of Service via trailing bytes after a compressed request body",
+      "advisory": "https://github.com/advisories/GHSA-27r3-jxmh-p828",
+      "patched_versions": ">=1.20.9",
+      "example_paths": [
+        ". > @umijs/preset-ui@2.2.9 > @umijs/ui@2.2.2 > express@4.17.1 > body-parser@1.19.0",
+        ". > umi-serve@1.9.11 > express@4.17.1 > body-parser@1.19.0"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "svgo",
+      "severity": "high",
+      "title": "SVGO: removeScripts allows executable links through namespace and control-character bypasses",
+      "advisory": "https://github.com/advisories/GHSA-w27v-7q3p-w38r",
+      "patched_versions": ">=2.8.4",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > umi@4.7.28 > @umijs/bundler-webpack@4.7.28 > @svgr/plugin-svgo@6.5.1 > svgo@2.8.0",
+        ". > @umijs/max@4.7.28 > umi@4.7.28 > @umijs/preset-umi@4.7.28 > @umijs/bundler-utoopack@4.7.28 > @umijs/bundler-webpack@4.7.28 > @svgr/plugin-svgo@6.5.1 > svgo@2.8.0"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    },
+    {
+      "package": "decode-uri-component",
+      "severity": "high",
+      "title": "decode-uri-component vulnerable to denial of service via quadratic replacement of percent-encoded runs",
+      "advisory": "https://github.com/advisories/GHSA-qr28-fpjm-wq7f",
+      "patched_versions": ">=0.5.1",
+      "example_paths": [
+        ". > @umijs/max@4.7.28 > umi@4.7.28 > @umijs/preset-umi@4.7.28 > @umijs/history@5.3.1 > query-string@6.14.1 > decode-uri-component@0.2.2",
+        ". > @umijs/preset-ui@2.2.9 > @umijs/plugin-ui-blocks@2.2.7 > @umijs/block-sdk@2.3.0 > @umijs/types@3.5.43 > @umijs/renderer-react@3.5.43 > @umijs/runtime@3.5.43 > history-with-query@4.10.4 > query-string@6.14.1 > decode-uri-component@0.2.2"
+      ],
+      "triage": "development/build tooling",
+      "decision": "defer full dependency migration; source snapshot only; not a public runtime deployment",
+      "review_date": "2026-11-06"
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{/* 新增智能体选择器 */}
+<div className="agent-selector" ref={agentSelectorRef}>
+<div 
+  className="agent-dropdown-trigger"
+  onClick={() => setShowAgentDropdown(!showAgentDropdown)}
+  style={{
+    padding: '8px 12px',
+    borderRadius: '8px',
+    background: '#30363d',
+    color: '#e6edf3',
+    cursor: 'pointer',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    minWidth: '160px',
+    height: '36px',
+    boxSizing: 'border-box',
+    marginRight: '8px'
+  }}
+>
+  <span style={{
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+    whiteSpace: 'nowrap',
+    maxWidth: '130px',
+    fontSize: '13px'
+  }}>
+    {selectedAgent ? selectedAgent.name : '选择智能体'}
+  </span>
+  <span style={{ marginLeft: '8px', flexShrink: 0 }}>
+    {showAgentDropdown ? '▲' : '▼'}
+  </span>
+</div>
+
+{showAgentDropdown && (
+  <div 
+    className="agent-dropdown-menu"
+    style={{
+      position: 'fixed',
+      top: `${agentDropdownPosition.top}px`,
+      left: `${agentDropdownPosition.left}px`,
+      background: '#21262d',
+      borderRadius: '8px',
+      padding: '8px',
+      boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
+      zIndex: 1000,
+      height: '180px',
+      overflowY: 'auto',
+      width: '220px',
+      border: '1px solid #30363d'
+    }}
+  >
+    <div style={{
+      padding: '4px 8px',
+      marginBottom: '8px',
+      borderBottom: '1px solid #30363d',
+      color: '#8b949e',
+      fontSize: '13px'
+    }}>
+      选择智能体
+    </div>
+    
+    {/* 默认选项 */}
+    <div
+      className="agent-dropdown-item"
+      onClick={() => {
+        setSelectedAgent(null);
+        setShowAgentDropdown(false);
+      }}
+      style={{
+        padding: '8px 12px',
+        borderRadius: '4px',
+        cursor: 'pointer',
+        background: !selectedAgent ? '#4f46e5' : 'transparent',
+        color: !selectedAgent ? 'white' : '#e6edf3',
+        margin: '2px 0',
+        display: 'flex',
+        alignItems: 'center',
+        transition: 'all 0.2s ease',
+        fontSize: '13px'
+      }}
+    >
+      <span style={{ 
+        marginRight: '8px',
+        width: '16px',
+        textAlign: 'center'
+      }}>
+        {!selectedAgent ? '✓' : '○'}
+      </span>
+      <span>默认助手</span>
+    </div>
+    
+    {/* 预设智能体 */}
+    {presetAgents.map(agent => (
+      <div
+        key={agent.id}
+        className="agent-dropdown-item"
+        onClick={() => {
+          setSelectedAgent(agent);
+          setShowAgentDropdown(false);
+        }}
+        style={{
+          padding: '8px 12px',
+          borderRadius: '4px',
+          cursor: 'pointer',
+          background: selectedAgent?.id === agent.id ? '#4f46e5' : 'transparent',
+          color: selectedAgent?.id === agent.id ? 'white' : '#e6edf3',
+          margin: '2px 0',
+          display: 'flex',
+          alignItems: 'center',
+          transition: 'all 0.2s ease',
+          fontSize: '13px'
+        }}
+      >
+        <span style={{ 
+          marginRight: '8px',
+          width: '16px',
+          textAlign: 'center'
+        }}>
+          {selectedAgent?.id === agent.id ? '✓' : '○'}
+        </span>
+        <span style={{
+          overflow: 'hidden',
+          textOverflow: 'ellipsis',
+          whiteSpace: 'nowrap'
+        }}>{agent.name}</span>
+      </div>
+    ))}
+    
+    {/* 自定义智能体 */}
+    {customAgents.length > 0 && (
+      <>
+        <div style={{
+          padding: '4px 8px',
+          margin: '8px 0',
+          borderBottom: '1px solid #30363d',
+          color: '#8b949e',
+          fontSize: '13px'
+        }}>
+          自定义智能体
+        </div>
+        {customAgents.map(agent => (
+          <div
+            key={agent.id}
+            className="agent-dropdown-item"
+            onClick={() => {
+              setSelectedAgent(agent);
+              setShowAgentDropdown(false);
+            }}
+            style={{
+              padding: '8px 12px',
+              borderRadius: '4px',
+              cursor: 'pointer',
+              background: selectedAgent?.id === agent.id ? '#4f46e5' : 'transparent',
+              color: selectedAgent?.id === agent.id ? 'white' : '#e6edf3',
+              margin: '2px 0',
+              display: 'flex',
+              alignItems: 'center',
+              transition: 'all 0.2s ease',
+              fontSize: '13px'
+            }}
+          >
+            <span style={{ 
+              marginRight: '8px',
+              width: '16px',
+              textAlign: 'center'
+            }}>
+              {selectedAgent?.id === agent.id ? '✓' : '○'}
+            </span>
+            <span style={{
+              overflow: 'hidden',
+              textOverflow: 'ellipsis',
+              whiteSpace: 'nowrap'
+            }}>{agent.name}</span>
+          </div>
+        ))}
+      </>
+    )}
+  </div>
+)}
+</div>

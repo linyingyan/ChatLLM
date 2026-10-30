@@ -1,0 +1,8 @@
+fastapi==0.115.12
+httpx==0.28.1
+langchain==0.3.25
+langchain_community==0.3.24
+pydantic==2.11.4
+sse_starlette==2.3.5
+uvicorn==0.34.2
+vllm==0.8.5.post1

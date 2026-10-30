@@ -1,0 +1,346 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+
+/* 假设这是父容器的类名，根据实际情况修改 */
+.parent-container {
+  display: flex;
+}
+
+.main-content {
+  flex-grow: 1;
+  min-width: 0; /* 防止内容溢出 */
+}
+.uploaded-files {
+  padding: 12px;
+  margin-bottom: 16px;
+  background-color: #21262d;
+  border-radius: 8px;
+  border: 1px solid #30363d;
+}
+
+.uploaded-files h4 {
+  margin: 0 0 8px 0;
+  color: #e6edf3;
+  font-size: 14px;
+}
+
+.file-list {
+  display: flex;
+  flex-wrap: nowrap; /* 确保文件项在一行显示 */
+  overflow-x: auto; /* 当文件项过多时显示水平滚动条 */
+  gap: 8px;
+}
+
+.file-item {
+  position: relative;
+  padding: 8px 12px;
+  background-color: #30363d;
+  border-radius: 6px;
+  color: #e6edf3;
+  font-size: 14px;
+  white-space: nowrap; /* 防止文件名换行 */
+}
+
+.file-delete-btn {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #da3633;
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 0;
+  line-height: 1;
+}
+
+.file-item:hover {
+  background-color: #3c424a;
+}
+
+.file-item:hover .file-delete-btn {
+  display: flex;
+}
+
+/* 输入按钮行样式 */
+.input-buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+/* 知识库选择器样式 */
+.knowledge-selector {
+  position: relative;
+  margin-right: 8px;
+  z-index: 100;
+}
+
+.knowledge-dropdown-trigger {
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.knowledge-dropdown-trigger:hover {
+  background: #4f46e5 !important;
+}
+
+.knowledge-dropdown-menu {
+  scrollbar-width: thin;
+  scrollbar-color: #4f46e5 #21262d;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.knowledge-dropdown-menu::-webkit-scrollbar {
+  width: 6px;
+}
+
+.knowledge-dropdown-menu::-webkit-scrollbar-track {
+  background: #21262d;
+  border-radius: 0 8px 8px 0;
+}
+
+.knowledge-dropdown-menu::-webkit-scrollbar-thumb {
+  background-color: #4f46e5;
+  border-radius: 3px;
+}
+
+.knowledge-dropdown-item:hover {
+  background: #4f46e5 !important;
+  color: white !important;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@keyframes dot-bounce {
+  0%, 100% { opacity: 0.3; transform: translateY(0); }
+  50% { opacity: 1; transform: translateY(-3px); }
+}
+
+.sending-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  height: 100%;
+}
+
+.sending-dots span {
+  display: inline-block;
+  animation: dot-bounce 1s infinite ease-in-out;
+  font-size: 18px;
+}
+/* 消息组容器 */
+.message-group {
+  margin-bottom: 16px;
+}
+
+.message-group .tool-message {
+  background-color: #f8f9fa;
+  border-radius: 12px 12px 0 0;
+  margin-bottom: 0;
+  padding-bottom: 8px;
+}
+
+.message-group .assistant-message {
+  border-radius: 0 0 12px 12px;
+  margin-top: -1px;
+}
+
+.tool-content-wrapper {
+  margin: 8px 0;
+  border-radius: 8px;
+}
+
+.tool-content-toggle {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.tool-content-collapsed {
+  font-size: 0.85em;
+  color: #666;
+}
+
+.tool-content-expanded {
+  font-size: 0.85em;
+  color: #666;
+  white-space: pre-wrap;
+}
+
+.tool-content-preview {
+  display: inline-block;
+}
+
+.tool-content-hint {
+  color: #666;
+  font-style: italic;
+  margin-left: 8px;
+}
+.tool-content-header {
+  font-size: 0.78em;
+  color: #666;
+  padding: 8px 12px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px 4px 0 0;
+}
+
+.tool-content-toggle-icon {
+  font-size: 0.5em;
+  color: #666;
+}
+.tool-content {
+  font-size: 0.85em;
+  color: #666;
+  white-space: pre-wrap;
+}
+
+.message-text {
+  white-space: pre-wrap;
+  margin-top: 8px;
+}
+/* 禁用页面滚动和交互 */
+.modal-open {
+  overflow: hidden;
+}
+
+/* 开关样式 */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #7c3aed;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: .4s;
+}

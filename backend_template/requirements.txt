@@ -1,0 +1,23 @@
+# Dependencies of the active backend_template application.
+# Legacy frontend-side Python demos are excluded from this environment.
+dbutils==3.1.1
+faiss-cpu==1.11.0
+fastapi==0.115.13
+httpx==0.28.1
+mcp==1.9.4
+numpy==2.3.1
+openai==1.90.0
+openpyxl==3.1.5
+passlib[bcrypt]==1.7.4
+pydantic==2.11.7
+PyMuPDF>=1.26,<2
+PyMySQL==1.1.1
+python-docx==1.1.2
+python-dotenv>=1.0,<2
+python-jose==3.5.0
+python-multipart>=0.0.18,<1
+python-pptx==1.0.2
+requests>=2.32.4,<3
+SQLAlchemy==2.0.41
+uvicorn==0.34.3
+xlrd==2.0.1

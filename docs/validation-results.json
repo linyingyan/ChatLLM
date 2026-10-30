@@ -1,0 +1,29 @@
+{
+  "checked_on": "2026-10-30",
+  "publication": "public source snapshot, not production deployment",
+  "python_source_check": {
+    "python_syntax_files": 37,
+    "environment_configuration": "pass",
+    "rag_split_text": "pass",
+    "external_services": "NOT RUN"
+  },
+  "frontend_frozen_install": "pass after refreshing mismatched archived lockfile",
+  "frontend_setup": "pass: pnpm exec max setup",
+  "frontend_build": "pass: pnpm build, Umi 4.7.28 / Webpack, after adding missing direct json5 dependency",
+  "audit_counts": {
+    "info": 0,
+    "low": 44,
+    "moderate": 112,
+    "high": 141,
+    "critical": 19
+  },
+  "remaining_risk_status": "Known high/critical transitive dependencies deferred with paths/reasons in dependency-audit-triage.json",
+  "review_date": "2026-11-06",
+  "not_run": [
+    "MySQL-backed end-to-end API tests: original full schema not in archive",
+    "MCP and provider API calls",
+    "full original test suite",
+    "Python dependency vulnerability audit"
+  ],
+  "original_archives_preserved": true
+}

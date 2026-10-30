@@ -1,0 +1,8 @@
+services:
+  2025-events-api:
+    api_endpoint: "http://localhost:8001/2025-events"
+mcp:
+  transport: stdio
+  tools:
+    - name: get_events
+      description: "获取2025年大事件"

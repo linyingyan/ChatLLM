@@ -1,0 +1,48 @@
+# Private local import records and original snapshots
+.local/
+# Secrets and developer settings
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+*.pem
+*.key
+credentials*.json
+.idea/
+.vscode/
+.DS_Store
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+# JavaScript and build output
+node_modules/
+dist/
+build/
+.umi/
+.umi-production/
+.umi-test/
+coverage/
+*.tsbuildinfo
+*.log
+*.stackdump
+# Runtime databases, uploads, knowledge indexes and sessions
+*.db
+*.db-*
+*.sqlite*
+*.index
+*.faiss
+backend_template/rag/database/
+uploads/
+# Legacy reference-only copies (the original archive remains untouched)
+frontend/ai-plat1/旧的备份参考（可忽略）/
+frontend/ai-plat1/app_call_api.py
+frontend/ai-plat1/测试流式输出.txt
+frontend/ai-plat1/src/tempPages/
+
+# Empty historical deployment placeholder; no active hosting configuration
+/deployment.json
